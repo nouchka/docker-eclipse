@@ -1,0 +1,12 @@
+eclipse:
+  image: nouchka/eclipse
+  environment:
+    - DISPLAY=unix$DISPLAY
+    - WAKATIME_KEY=xxxxx-xxxxx-xxxxx
+  volumes:
+    - ~/.ssh/:/home/developer/.ssh/
+    - ~/.gitconfig:/home/developer/.gitconfig
+    - /tmp/.X11-unix:/tmp/.X11-unix
+
+##https://github.com/jfrazelle/dockerfiles/issues/4
+##xhost local:root
