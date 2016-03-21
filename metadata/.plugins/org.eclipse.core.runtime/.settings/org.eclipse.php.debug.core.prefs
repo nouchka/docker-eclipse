@@ -1,0 +1,9 @@
+DefaultProjectBasePath=/Taito
+eclipse.preferences.version=1
+org.eclipse.php.debug.coreinstalledPHPDebuggers=org.eclipse.php.debug.core.xdebugDebugger
+org.eclipse.php.debug.coreinstalledPHPDefaults=org.eclipse.php.debug.core.xdebugDebugger\=PHP 5.3.10 (CLI)
+org.eclipse.php.debug.coreinstalledPHPInis=null
+org.eclipse.php.debug.coreinstalledPHPLoadIniDefaults=false
+org.eclipse.php.debug.coreinstalledPHPLocations=/usr/bin/php5
+org.eclipse.php.debug.coreinstalledPHPNames=PHP 5.3.10 (CLI)
+org.eclipse.php.debug.corephp_versions=null

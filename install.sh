@@ -14,9 +14,10 @@ sed -i \
   -installIU com.dubture.twig.feature.feature.group \
   -installIU com.wakatime.eclipse.feature.feature.group \
   -installIU org.dadacoalition.yedit.feature.feature.group \
-  -installIU org.eclipse.linuxtools.docker.feature.feature.group \
   -installIU org.polarion.eclipse.team.svn.connector.feature.group \
   -installIU org.polarion.eclipse.team.svn.connector.javahl18.feature.group \
+  -installIU org.eclipse.mylin.trac_feature.feature.group \
+  -installIU org.eclipse.linuxtools.docker.feature.feature.group \
   -installIU com.google.eclipse.elt.feature.group
 
 rsync -rvz /home/developer/metadata/ /home/developer/workspace/.metadata/
