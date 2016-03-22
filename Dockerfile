@@ -1,13 +1,14 @@
 FROM debian:jessie
 MAINTAINER Jean-Avit Promis "docker@katagena.com"
 
-##wget to DL
+##TODO remove curl or wget
+##wget && curl to DL
 ##jdk for eclipse
 ##php5 php5-cli php5-xdebug for php dev
 ##git svn for team
 ##libcanberra-gtk3-module for graph
 RUN apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get -yq install wget openjdk-7-jdk php5 php5-cli php5-xdebug git subversion libcanberra-gtk3-module && \
+	DEBIAN_FRONTEND=noninteractive apt-get -yq install wget openjdk-7-jdk php5 php5-cli php5-xdebug git subversion libcanberra-gtk3-module curl && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN wget http://mirror.ibcp.fr/pub/eclipse//technology/epp/downloads/release/mars/1/eclipse-php-mars-1-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
