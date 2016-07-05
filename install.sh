@@ -8,7 +8,6 @@ sed -i \
   -application org.eclipse.equinox.p2.director \
   -repository http://www.nodeclipse.org/updates/markdown/,http://download.eclipse.org/releases/mars/,http://nodj.github.io/AutoDeriv/update,http://p2-dev.pdt-extensions.org,http://community.polarion.com/projects/subversive/download/eclipse/5.0/mars-site/,http://elt.googlecode.com/git/update-site,https://raw.githubusercontent.com/wakatime/eclipse-wakatime/master/update-site/,http://dadacoalition.org/yedit \
   -destination /opt/eclipse \
-  -installIU markdown.editor.feature.feature.group \
   -installIU net.nodj.AutoDerivFeature.feature.group \
   -installIU com.dubture.symfony.feature.feature.group \
   -installIU com.dubture.composer.feature.feature.group \
