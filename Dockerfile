@@ -22,8 +22,8 @@ RUN wget http://get.sensiolabs.org/php-cs-fixer.phar -O php-cs-fixer && \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN php /usr/local/bin/composer self-update
 
-COPY install.sh /install.sh
-RUN chmod +x /install.sh
+COPY launch.sh /launch.sh
+RUN chmod +x /launch.sh
 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
