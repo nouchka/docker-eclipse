@@ -22,8 +22,6 @@ RUN wget http://get.sensiolabs.org/php-cs-fixer.phar -O php-cs-fixer && \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN php /usr/local/bin/composer self-update
 
-COPY launch.sh /launch.sh
-RUN chmod +x /launch.sh
 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
@@ -35,7 +33,9 @@ COPY home/.wakatime.cfg /home/developer/.wakatime.cfg
 COPY configuration/ /opt/eclipse/configuration/
 COPY metadata/ /home/developer/metadata/
 
-RUN chown developer: /install.sh
+COPY launch.sh /launch.sh
+RUN chmod +x /launch.sh
+RUN chown developer: /launch.sh
 RUN chown -R developer: /home/developer/.wakatime.cfg
 RUN chown -R developer: /opt/eclipse/
 RUN chown -R developer: /home/developer/metadata/
