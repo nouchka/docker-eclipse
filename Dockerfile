@@ -43,4 +43,4 @@ RUN chown -R developer: /home/developer/metadata/
 USER developer
 ENV HOME /home/developer
 
-CMD /install.sh
+CMD /launch.sh
