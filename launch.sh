@@ -15,15 +15,9 @@ if [ ! -f "$FLAG" ]; then
 	  -installIU markdown.editor.feature.feature.group \
 	  -installIU net.nodj.AutoDerivFeature.feature.group \
 	  -installIU com.dubture.symfony.feature.feature.group \
-	  -installIU com.dubture.composer.feature.feature.group \
 	  -installIU com.dubture.doctrine.feature.feature.group \
 	  -installIU com.dubture.twig.feature.feature.group \
 	  -installIU com.wakatime.eclipse.feature.feature.group \
-	  -installIU org.dadacoalition.yedit.feature.feature.group \
-	  -installIU org.polarion.eclipse.team.svn.connector.feature.group \
-	  -installIU org.polarion.eclipse.team.svn.connector.javahl18.feature.group \
-##	  -installIU org.eclipse.mylin.trac_feature.feature.group \
-	  -installIU org.eclipse.linuxtools.docker.feature.feature.group \
 	  -installIU com.google.eclipse.elt.feature.group
 
 	rsync -rvz /home/developer/metadata/ /home/developer/workspace/.metadata/
