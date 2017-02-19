@@ -1,5 +1,6 @@
 eclipse:
-  image: nouchka/eclipse
+  build: .
+  container_name: eclipse_test
   environment:
     - DISPLAY=unix$DISPLAY
     - WAKATIME_KEY=xxxxx-xxxxx-xxxxx
