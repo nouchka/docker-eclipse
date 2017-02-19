@@ -11,7 +11,7 @@ RUN apt-get update && \
 	DEBIAN_FRONTEND=noninteractive apt-get -yq install wget openjdk-7-jdk php5 php5-cli php5-xdebug git subversion libcanberra-gtk3-module curl lintian fakeroot ssh-askpass openssh-client rsync && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN wget http://mirror.ibcp.fr/pub/eclipse//technology/epp/downloads/release/mars/1/eclipse-php-mars-1-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
+RUN wget http://mirror.ibcp.fr/pub/eclipse//technology/epp/downloads/release/mars/2/eclipse-php-mars-2-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
     tar -xf /tmp/eclipse.tar.gz -C /opt && \
     rm /tmp/eclipse.tar.gz
 

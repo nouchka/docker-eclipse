@@ -10,13 +10,10 @@ if [ ! -f "$FLAG" ]; then
 
 	/opt/eclipse/eclipse -nosplash \
 	  -application org.eclipse.equinox.p2.director \
-	  -repository http://www.nodeclipse.org/updates/markdown/,http://download.eclipse.org/releases/mars/,http://nodj.github.io/AutoDeriv/update,http://p2-dev.pdt-extensions.org,https://raw.githubusercontent.com/wakatime/eclipse-wakatime/master/update-site/ \
+	  -repository http://www.nodeclipse.org/updates/markdown/,http://download.eclipse.org/releases/mars/,http://nodj.github.io/AutoDeriv/update,https://raw.githubusercontent.com/wakatime/eclipse-wakatime/master/update-site/ \
 	  -destination /opt/eclipse \
 	  -installIU markdown.editor.feature.feature.group \
 	  -installIU net.nodj.AutoDerivFeature.feature.group \
-	  -installIU com.dubture.symfony.feature.feature.group \
-	  -installIU com.dubture.doctrine.feature.feature.group \
-	  -installIU com.dubture.twig.feature.feature.group \
 	  -installIU com.wakatime.eclipse.feature.feature.group \
 	  -installIU org.eclipse.tm.terminal.feature.feature.group
 
