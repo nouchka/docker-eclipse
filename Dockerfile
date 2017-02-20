@@ -4,11 +4,12 @@ MAINTAINER Jean-Avit Promis "docker@katagena.com"
 ##TODO remove curl or wget
 ##wget && curl to DL
 ##jdk for eclipse
-##php5 php5-cli php5-xdebug for php dev
-##git svn for team
+##php php-cli php-xdebug for php dev
+##git for team
 ##libcanberra-gtk3-module for graph
+
 RUN apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get -yq install wget openjdk-8-jdk php7.0 php-cli php-xdebug git libcanberra-gtk3-module curl lintian fakeroot ssh-askpass openssh-client rsync python unzip && \
+	DEBIAN_FRONTEND=noninteractive apt-get -yq install wget openjdk-8-jdk php7.0 php-cli php-xdebug php-intl php-xml git libcanberra-gtk3-module curl lintian fakeroot ssh-askpass openssh-client rsync python unzip && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN wget http://ftp.fau.de/eclipse/technology/epp/downloads/release/neon/2/eclipse-php-neon-2-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
