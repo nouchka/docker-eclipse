@@ -2,15 +2,18 @@ version: '2'
 
 services:
   eclipse:
-    build: .
+    image: nouchka/eclipse:oxygen
     container_name: "eclipse_test"
     environment:
       - DISPLAY=unix$DISPLAY
       - WAKATIME_KEY=xxxxx-xxxxx-xxxxx
     volumes:
       - ~/.ssh/:/home/developer/.ssh/
+      - /etc/ssh/ssh_known_hosts:/etc/ssh/ssh_known_hosts
       - ~/.gitconfig:/home/developer/.gitconfig
+      - ~/.gitignore_global:/home/developer/.gitignore_global
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/workspace/:/home/developer/workspace/
 
 ##https://github.com/jfrazelle/dockerfiles/issues/4
 ##xhost local:root
