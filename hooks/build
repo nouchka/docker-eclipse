@@ -10,7 +10,7 @@ fi
 
 if [ "$ECLIPSE_VERSION" = "oxygen" ]; then
 	BASE_IMAGE=ubuntu:xenial
-	ECLIPSE_TAR_URL=http://ftp.fau.de/eclipse/technology/epp/downloads/release/oxygen/1a/eclipse-php-oxygen-1a-linux-gtk-x86_64.tar.gz
+	ECLIPSE_TAR_URL=http://ftp.fau.de/eclipse/technology/epp/downloads/release/oxygen/2/eclipse-php-oxygen-2-linux-gtk-x86_64.tar.gz
 elif [ "$ECLIPSE_VERSION" = "neon" ]; then
 	BASE_IMAGE=ubuntu:xenial
 	ECLIPSE_TAR_URL=http://ftp.fau.de/eclipse/technology/epp/downloads/release/neon/2/eclipse-php-neon-2-linux-gtk-x86_64.tar.gz
